@@ -1,0 +1,49 @@
+{
+  "name"           : "web-template-react",
+  "title"          : "Web Template React",
+  "description"    : "Web Template with Gulp - Pug - SCSS - React",
+  "version"        : "1.0.0",
+  "author"         : "Kei",
+  "homepage"       : "https://github.com/keinguyen/web-template-react",
+  "main"           : "gulpfile.js",
+  "license"        : "MIT",
+  "repository"     : {
+    "type": "git",
+    "url" : "https://github.com/keinguyen/web-template-react/"
+  },
+  "keywords": ["web template", "gulp", "pug", "scss", "react"],
+  "engines" : {
+    "node": "6.4.0",
+    "npm" : "3.10.9"
+  },
+  "scripts": {
+    "install": "bower install"
+  },
+  "dependencies": {
+    "babel-preset-react": "6.16.0",
+    "gulp"               : "3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync"     : "2.17.6",
+    "del"              : "2.2.2",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-babel"       : "6.1.2",
+    "gulp-cached"      : "1.1.0",
+    "gulp-concat"      : "2.6.1",
+    "gulp-gh-pages"    : "0.5.4",
+    "gulp-imagemin"    : "3.1.1",
+    "gulp-load-plugins": "1.4.0",
+    "gulp-notify"      : "2.2.0",
+    "gulp-pug"         : "3.1.0",
+    "gulp-sass"        : "2.3.2",
+    "gulp-sequence"    : "0.4.6",
+    "gulp-sftp"        : "0.1.5",
+    "gulp-sourcemaps"  : "2.2.0",
+    "gulp-uglify"      : "2.0.0",
+    "yargs"            : "6.4.0"
+  },
+  "babel": {
+    "ignore" : ["app/scripts/_lib/*.js"],
+    "presets": ["react"]
+  }
+}

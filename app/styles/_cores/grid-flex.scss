@@ -1,0 +1,26 @@
+.row {
+  @include flex();
+  flex-direction: row;
+  &.reverse { flex-direction: row-reverse }
+}
+.column {
+  @include flex();
+  flex-direction: column;
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+[class*="col-"] {
+  padding: 1rem;
+  direction: ltr;
+}
+@each $breakName, $breakPoint in $screen {
+  @media screen and (min-width: $breakPoint) {
+    @for $i from 1 through $grid {
+      .col-#{$breakName}-#{$i} {
+        width: percentage($i / $grid);
+      }
+    }
+  }
+}

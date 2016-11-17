@@ -1,0 +1,23 @@
+html {
+  font: {
+    family: $default-font;
+    size: $gutter;
+  }
+  line-height: $default-line-height;
+  background-color: $default-bg-color;
+  color: $default-color;
+}
+
+body {
+  min-width: map-get($screen, xs);
+  font-size: $default-font-size;
+}
+.clearfix {
+  @include clearfix;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  max-width: 1500px;
+}

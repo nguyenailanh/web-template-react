@@ -1,0 +1,47 @@
+//___________________________________
+//                               FONT
+$font-family-sans-serif      : Verdana, Arial, sans-serif;
+$font-family-serif           : Georgia, "Times New Roman", Times, serif;
+$font-family-monospace       : Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base            : $font-family-sans-serif;
+$font-family-roboto          : "Roboto", $font-family-sans-serif;
+$font-family-roboto-condensed: "RobotoCondensed", $font-family-sans-serif;
+
+
+
+//___________________________________
+//                              COLOR
+$color-white  : #fefefe;
+$color-white-2: #ccc;
+$color-black  : #111;
+$color-black-2: lighten($color-black, 35%);
+$color-black-3: lighten($color-black, 7%);
+$color-red    : #C3002F;
+
+
+
+//___________________________________
+//                        BREAK POINT
+$screen: (
+  xs: 320px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+
+
+//___________________________________
+//                               GRID
+$grid  : 12;
+$gutter: 10px;
+
+
+
+//___________________________________
+//                     DEFAULT VALUES
+$default-font       : $font-family-base;
+$default-font-size  : 14px;
+$default-line-height: 1.5;
+$default-bg-color   : $color-white;
+$default-color      : $color-black;

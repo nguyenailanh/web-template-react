@@ -1,0 +1,72 @@
+:after, :before{
+  box-sizing: inherit;
+  vertical-align: inherit;
+}
+:focus, :active, :hover, :target{ outline: 0 }
+::-moz-focus-inner{ @include reset }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+select, optgroup, input, button, textarea {
+  @include reset(all);
+  @include font-smooth;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+ol, ul { list-style: none }
+blockquote, q {
+  quotes: none;
+  &:before, &:after, {
+    content: "";
+    content: none;
+  }
+}
+table {
+  border: {
+    collapse: collapse;
+    spacing: 0;
+  }
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+html {
+  text-size-adjust: 100%;
+  font-family: Tahoma, sans-serif;
+}
+
+@for $i from 1 through 6 {
+  $reset-header-size: 2em - (.2em * ($i - 1));
+  h#{$i} {
+    font-size: $reset-header-size;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+hr {
+  display: block;
+  width: 100%;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #666;
+  margin: 5px auto;
+}
+select, optgroup, input, button, textarea{
+  padding: 10px 15px;
+  border: 1px solid #666;
+}
+select, button, [type=button], [type=submit], [type=reset], [type=range], [for]{ cursor: pointer }

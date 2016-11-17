@@ -1,0 +1,25 @@
+@include font-face("icons", "../font/FontAwesome/fontawesome");
+
+@include font-face("Roboto", "../font/Roboto/RobotoRegular");
+
+@include font-face("Roboto", "../font/Roboto/RobotoItalic", $style: italic);
+
+@include font-face("Roboto", "../font/Roboto/RobotoBold", bold);
+
+@include font-face("Roboto", "../font/Roboto/RobotoBoldItalic", bold, italic);
+
+@include font-face("Roboto", "../font/Roboto/RobotoLight", 200);
+
+@include font-face("Roboto", "../font/Roboto/RobotoLightItalic", 200, italic);
+
+@include font-face("RobotoCondensed", "../font/Roboto/RobotoCondensedRegular");
+
+@include font-face("RobotoCondensed", "../font/Roboto/RobotoCondensedItalic", $style: italic);
+
+@include font-face("RobotoCondensed", "../font/Roboto/RobotoCondensedBold", bold);
+
+@include font-face("RobotoCondensed", "../font/Roboto/RobotoCondensedBoldItalic", bold, italic);
+
+@include font-face("RobotoCondensed", "../font/Roboto/RobotoCondensedLight", 200);
+
+@include font-face("RobotoCondensed", "../font/Roboto/RobotoCondensedLightItalic", 200, italic);

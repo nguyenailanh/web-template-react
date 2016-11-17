@@ -1,0 +1,4 @@
+mixin img(alt, src)
+  - if (typeof(alt) === 'undefined') alt = 'Image Placeholder'
+  - if (typeof(src) === 'undefined') href = 'images/transparent.png'
+  img(src=src alt=!alt)&attributes(attributes)

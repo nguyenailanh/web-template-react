@@ -1,0 +1,27 @@
+.row {
+  @include clearfix;
+  position: relative;
+  width: 100%;
+  &.fluid {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  padding: 1rem;
+}
+@each $breakName, $breakPoint in $screen {
+  @media screen and (min-width: $breakPoint) {
+    @for $i from 1 through $grid {
+      .col-#{$breakName}-#{$i} {
+        width: percentage($i / $grid);
+      }
+      .col-#{$breakName}-hidden {
+        display: none;
+      }
+    }
+  }
+}

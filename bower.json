@@ -5,7 +5,7 @@
   "dependencies": {
     "detectizr": "https://unpkg.com/detectizr@2.2.0/dist/detectizr.js",
     "jquery": "https://unpkg.com/jquery@3.1.1/dist/jquery.js",
-    "react": "https://unpkg.com/react@15.4.0/dist/react.js",
-    "react-dom": "https://unpkg.com/react-dom@15.4.0/dist/react-dom.js"
+    "react": "https://unpkg.com/react@15.4.2/dist/react.js",
+    "react-dom": "https://unpkg.com/react-dom@15.4.2/dist/react-dom.js"
   }
 }

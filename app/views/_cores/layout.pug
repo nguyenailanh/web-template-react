@@ -19,13 +19,13 @@ html(lang=lang)
     title=title
     link(rel="icon" href="images/icons/favicon-16x16.png" type="image/x-icon" sizes="16x16")
     link(rel="stylesheet" href="css/libs.css")
-    block styles
+    block style
   body(class=nameSpace)
-    include ../_modules/header
+    include ../_partial/header
     block container
-    include ../_modules/footer
+    include ../_partial/footer
     // Script Block
     .script
       script(src="js/libs.js")
-      block scripts
+      block script
     noscript JavaScript is off. Please enable to view full site.
